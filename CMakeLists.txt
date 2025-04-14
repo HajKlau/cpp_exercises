@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+project(cpp_exercises_various)  #define the project name
+
+
+enable_testing() #turns on the project's test handling
+
+add_subdirectory(leetcode/minimum_number_of_operations) #Adds a subdirectory as part of the project, allowing its configuration to be managed separately.
+
+add_subdirectory(leetcode/palindrome_number)
