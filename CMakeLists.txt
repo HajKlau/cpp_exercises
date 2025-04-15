@@ -9,3 +9,5 @@ add_subdirectory(leetcode/minimum_number_of_operations) #Adds a subdirectory as 
 add_subdirectory(leetcode/palindrome_number)
 
 add_subdirectory(leetcode/count_chars)
+
+add_subdirectory(leetcode/group_anagram)

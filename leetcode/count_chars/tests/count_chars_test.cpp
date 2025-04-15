@@ -12,10 +12,10 @@ TEST(CountCharsTest, EmptyString)
 
 TEST(CountCharsTest, AllSameChars)
 {
-    std::string all_same_chars_string = "ooo"
-    std::unordered_map<char, int> result = countChar(all_same_chars_string)
+    std::string all_same_chars_string = "ooo";
+    std::unordered_map<char, int> result = countChar(all_same_chars_string);
     EXPECT_EQ(result['o'], 3);
-    EXPECT_EQ(result.size(), 1)
+    EXPECT_EQ(result.size(), 1);
 }
 
 TEST(CountCharsTest, AllUniqueChars)
@@ -41,6 +41,7 @@ TEST(CountCharsTest, MixedChars)
     EXPECT_EQ(result['t'], 1);
     EXPECT_EQ(result['i'], 1);
     EXPECT_EQ(result['n'], 1);
+    EXPECT_EQ(result.size(), 8);
 }
 
 TEST(CountCharsTest, CaseSensitivity)
@@ -60,7 +61,7 @@ TEST(CountCharsTest, WithSpacesAndSpecialChars)
     std::unordered_map<char, int> result = countChar(special_chars);
     EXPECT_EQ(result['a'], 2);
     EXPECT_EQ(result[' '], 1);
-    EXPECT_EQ(resul['!'], 1);
+    EXPECT_EQ(result['!'], 1);
     EXPECT_EQ(result['b'], 1);
     EXPECT_EQ(result['@'], 1);
     EXPECT_EQ(result.size(), 5);
