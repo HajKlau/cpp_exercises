@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    vector<string> myString = {"eat", "tea", "tan", "ate", "nat", "bat"};
+    vector<string> myString = {};
     vector<vector<string>> grouped = groupAnagrams(myString);
     cout << "Grouped anagrams: " << endl;
     for (const auto& group : grouped) {

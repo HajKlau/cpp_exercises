@@ -6,7 +6,7 @@
 TEST(CountCharsTest, EmptyString)
 {
     std::string empty_string = "";
-    unordered_map<char, int> result = countChar(empty_string);
+    std::unordered_map<char, int> result = countChar(empty_string);
     EXPECT_TRUE(result.empty());
 }
 
