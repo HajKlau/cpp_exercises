@@ -5,6 +5,4 @@
 #include<unordered_map>
 #include<algorithm>
 
-using namespace std;
-
-vector<vector<string>> groupAnagrams(vector<string>& strs);
+std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& strs);

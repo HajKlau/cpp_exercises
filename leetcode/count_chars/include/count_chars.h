@@ -3,6 +3,5 @@
 #include<unordered_map>
 #include<string>
 
-using namespace std;
-
-unordered_map<char, int> countChar(const string& s);
+std::unordered_map<char, int> countChar(const std::string& s);
+void printCounterChar(const std::unordered_map<char, int>& counter);

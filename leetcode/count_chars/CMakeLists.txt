@@ -17,7 +17,7 @@ target_link_libraries(count_chars_app
 )
 
 find_package(GTest REQUIRED)
-include(GoogleTest)+
+include(GoogleTest)
 
 add_executable(count_chars_test
     tests/count_chars_test.cpp

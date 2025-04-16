@@ -5,7 +5,7 @@
 
 TEST(CountCharsTest, EmptyString)
 {
-    std::string empty_string = " ";
+    std::string empty_string = "";
     unordered_map<char, int> result = countChar(empty_string);
     EXPECT_TRUE(result.empty());
 }
@@ -35,7 +35,7 @@ TEST(CountCharsTest, MixedChars)
     std::unordered_map<char, int> result = countChar(mixed_chars_string);
     EXPECT_EQ(result['a'], 2);
     EXPECT_EQ(result['c'], 2);
-    EXPECT_EQ(result['o'], 2);
+    EXPECT_EQ(result['o'], 3);
     EXPECT_EQ(result['m'], 2);
     EXPECT_EQ(result['d'], 1);
     EXPECT_EQ(result['t'], 1);

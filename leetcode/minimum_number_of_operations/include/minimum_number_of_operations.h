@@ -2,7 +2,5 @@
 
 #include<vector>
 
-using namespace std;
 
-
-int minimumNumberOfOperations(vector<int>& numbers);
+int minimumNumberOfOperations(std::vector<int>& numbers);
