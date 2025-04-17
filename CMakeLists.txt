@@ -11,3 +11,5 @@ add_subdirectory(leetcode/palindrome_number)
 add_subdirectory(leetcode/count_chars)
 
 add_subdirectory(leetcode/group_anagram)
+
+add_subdirectory(leetcode/has_duplicates)
