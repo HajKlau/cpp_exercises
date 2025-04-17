@@ -1,6 +1,6 @@
 # Cpp exercises various
 
-A collection of programming tasks in C++, sorted by topic and according to good design practices. The code is modular, tested and organised in a way that resembles real production projects.
+A collection of programming tasks in C++, done according to good design practices and sorted by topics. The code is modular, organised and is being tested to resemble real production projects.
 
 ## Directory structure
 
@@ -30,30 +30,30 @@ cpp_exercises_various/
 │       └── tests
 └── README.md
 ```
-Each tasks is divided into:
+Each task is divided into:
 - `include/` - headers (`.h`)
 - `src/` - implementations (`.cpp`)
 - `tests/` - unit tests in Google Test (`.cpp`)
 
-The structure will change as the repository grows.
+The structure will change as the repository will grow.
 
-## Project building and test launch
+## Project building and launching tests
 
 ### 1. Create a build directory in the project root directory and navigate to it:
-```
+```bash
 mkdir -p build
 cd build
 ```
 ### 2. Generate build files via CMake
-```
+```bash
 cmake ..
 ```
 ### 3. Build the project
-```
+```bash
 cmake --build .
 ```
 ### 4. Run tests
-```
+```bash
 ctest
 ```
 
