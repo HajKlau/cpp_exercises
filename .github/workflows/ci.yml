@@ -16,9 +16,17 @@ jobs:
           sudo cp lib/*.a /usr/lib && \
           sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && \
           sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
-      - name: Create directory and change workdir to it
-        run: mkdir build/ && cd build
+
+      - name: Create dir and change workdir to it
+        run: mdkir build/
+      
       - name: Build the project
-        run: cmake .. && cmake --build .
+        run: |
+          cd build && \
+          cmake .. && \
+          cmake --build .
+          
       - name: Run tests
-        run: ctest
+        run: |
+          cd build \
+          && ctest
