@@ -3,7 +3,27 @@ name: C++ CI
 on: [push]
 
 jobs:
-  run-tests:
+  run-build-and-tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "test1"
+
+      - name: Prepare environment
+      - run: |
+          sudo apt update && \
+          sudo apt-get install -y cmake libgtest-dev && \
+          cd /usr/src/gtest && \
+          sudo cmake CMakeLists.txt && \
+          sudo make && \
+          sudo cp lib/*.a /usr/lib && \
+          sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && \
+          sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+      
+      - name: Create directory and change workdir to it
+      - run: mkdir build/ && cd build
+
+      - name: Build the project
+      - run: cmake ..
+      - run: cmake --build .
+
+      - name: Run tests
+      - run: ctest
