@@ -1,0 +1,9 @@
+name: C++ CI
+
+on: [push]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test1"
