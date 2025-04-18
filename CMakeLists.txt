@@ -15,3 +15,5 @@ add_subdirectory(leetcode/group_anagram)
 add_subdirectory(leetcode/has_duplicates)
 
 add_subdirectory(leetcode/two_sum)
+
+add_subdirectory(leetcode/valid_parentheses)
