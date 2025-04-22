@@ -25,8 +25,21 @@ TEST(MinimumNumberOfOperationsTest, Mixed)
     std::vector<int> duplicate_vec = {2,2,4,7,1,4,8,0,0,5,6,8,9,3,8,8,8,1,2,7};
     EXPECT_EQ(minimumNumberOfOperations(duplicate_vec), 6);
 }
+
 TEST(MinimumNumberOfOperationsTest, ShorterThanThree)
 {
     std::vector<int> shorter_than_three_vec = {5, 5};
     EXPECT_EQ(minimumNumberOfOperations(shorter_than_three_vec), 1);
+}
+
+TEST(MinimumNumberOfOperationsTest, ThreeRepeatsElements) 
+{
+    std::vector<int> shorter_than_three_vec = {5, 5, 5};
+    EXPECT_EQ(minimumNumberOfOperations(shorter_than_three_vec), 1);
+}
+
+TEST(MinimumNumberOfOperationsTest, AlternatingRepeats) 
+{
+    std::vector<int> shorter_than_three_vec = {2, 4, 2, 4, 2, 4, 2, 4, 2, 4};
+    EXPECT_EQ(minimumNumberOfOperations(shorter_than_three_vec), 3);
 }
