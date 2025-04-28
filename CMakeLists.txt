@@ -19,3 +19,5 @@ add_subdirectory(leetcode/two_sum)
 add_subdirectory(leetcode/valid_parentheses)
 
 add_subdirectory(leetcode/count_primes)
+
+add_subdirectory(leetcode/search_insert_position)

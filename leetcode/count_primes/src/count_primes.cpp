@@ -2,6 +2,7 @@
 #include<iostream>
 #include<vector>
 
+//task with used Sieve of Eratosthenes algorithm
 using namespace std;
 
 int SolutionOfCountPrimes::countPrime(int n)
