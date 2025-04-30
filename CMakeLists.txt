@@ -21,3 +21,5 @@ add_subdirectory(leetcode/valid_parentheses)
 add_subdirectory(leetcode/count_primes)
 
 add_subdirectory(leetcode/search_insert_position)
+
+add_subdirectory(leetcode/first_unique_char)
