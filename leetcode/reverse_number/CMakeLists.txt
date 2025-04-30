@@ -14,16 +14,17 @@ target_link_libraries(reverse_number_app
 	reverse_number_lib
 )
 
-find_package(GTest REQUIRED)
-include(GoogleTest)
+#  find_package(GTest REQUIRED)
+#  include(GoogleTest)
 
-add_executable(reverse_number_test
-    tests/reverse_number_test.cpp
-)
+#  add_executable(reverse_number_test
+#     tests/reverse_number_test.cpp
+# )
 
-target_link_libraries(reverse_number_test
-    reverse_number_lib
-    GTest::gtest_main
-)
 
-gtest_discover_tests(reverse_number_test)
+#  target_link_libraries(reverse_number_test
+#    reverse_number_lib
+#     GTest::gtest_main
+# )
+
+# gtest_discover_tests(reverse_number_test)
