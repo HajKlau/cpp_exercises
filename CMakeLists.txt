@@ -27,3 +27,5 @@ add_subdirectory(leetcode/first_unique_char)
 add_subdirectory(leetcode/reverse_number)
 
 add_subdirectory(leetcode/reverse_string)
+
+add_subdirectory(leetcode/sum_vector)
