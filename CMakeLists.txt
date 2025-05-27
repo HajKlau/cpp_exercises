@@ -32,3 +32,4 @@ add_subdirectory(leetcode/sum_vector)
 
 add_subdirectory(leetcode/sort_descending_vector)
 
+add_subdirectory(leetcode/length_of_last_word)
